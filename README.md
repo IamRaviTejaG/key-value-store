@@ -1,9 +1,8 @@
 # Key Value Store
 
-[![Build Status](https://travis-ci.org/IamRaviTejaG/product-catalog.svg?branch=master)](https://travis-ci.org/IamRaviTejaG/product-catalog) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
+[![Build Status](https://travis-ci.org/IamRaviTejaG/key-value-store.svg?branch=master)](https://travis-ci.org/IamRaviTejaG/key-value-store) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
 
 ## Contents
-- [Contents](#contents)
 - [Getting Started](#getting-started)
 - [Dependencies &amp; Packages](#dependencies-amp-packages)
 - [Running locally](#running-locally)
