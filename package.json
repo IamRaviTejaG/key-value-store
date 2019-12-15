@@ -1,0 +1,59 @@
+{
+  "name": "restful-cli-key-value-store",
+  "version": "1.0.0",
+  "description": "A RESTful API & CLI for a key-value store.",
+  "main": "index.js",
+  "bin":{
+    "store-cli": "./store-cli.js"
+  },
+  "scripts": {
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --copy-files",
+    "coverage": "nyc --reporter=text mocha --require @babel/register --timeout 5000 --exit",
+    "linter": "standard --fix",
+    "start": "npm run build && node dist/index.js --no-deprecation",
+    "test": "mocha --require @babel/register --timeout 5000 --exit"
+  },
+  "keywords": [
+    "REST",
+    "Product",
+    "Catalog",
+    "RESTful",
+    "API"
+  ],
+  "author": "Ravi Teja Gannavarapu",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "commander": "^4.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/register": "^7.7.4",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
+    "rimraf": "^3.0.0",
+    "standard": "^14.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamRaviTejaG/key-value-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IamRaviTejaG/key-value-store/issues"
+  },
+  "homepage": "https://github.com/IamRaviTejaG/key-value-store#readme",
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  }
+}
